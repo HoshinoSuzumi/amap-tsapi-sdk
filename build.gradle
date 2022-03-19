@@ -1,14 +1,14 @@
 plugins {
     id 'java'
-    id 'idea'
     id 'maven-publish'
 }
 
-group 'moe.ibox'
+group 'com.github.HoshinoSuzumi'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url "https://jitpack.io"  }
 }
 
 dependencies {
