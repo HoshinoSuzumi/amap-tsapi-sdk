@@ -5,6 +5,7 @@
       <w>errcode</w>
       <w>errdetail</w>
       <w>errmsg</w>
+      <w>tsapi</w>
     </words>
   </dictionary>
 </component>
