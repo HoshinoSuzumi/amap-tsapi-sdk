@@ -1,6 +1,8 @@
 package moe.ibox.tsapi.entities.response;
 
-public class ServiceCreated {
+import java.io.Serializable;
+
+public class ServiceCreated implements Serializable {
     private int sid;
     private String name;
 
