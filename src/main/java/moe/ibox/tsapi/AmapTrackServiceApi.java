@@ -22,7 +22,7 @@ public class AmapTrackServiceApi {
     }
 
     public void add(String key, String name, String desc, ServiceCallback<BaseResponse<ServiceCreated>> callback) {
-        serviceManagement.addService(key, name, desc).enqueue(callback);
-//        serviceManagement.addService(new ServiceAdd(key, name, desc)).enqueue(callback);
+//        serviceManagement.addService(key, name, desc).enqueue(callback);
+        serviceManagement.addService(new ServiceAdd(key, name, desc)).enqueue(callback);
     }
 }
