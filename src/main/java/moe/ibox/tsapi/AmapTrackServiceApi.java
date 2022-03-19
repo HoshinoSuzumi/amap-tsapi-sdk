@@ -16,7 +16,7 @@ public class AmapTrackServiceApi {
     public AmapTrackServiceApi() {
         this.retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://tsapi.amap.com/v1/")
+                .baseUrl("https://tsapi.amap.com/v1/track/")
                 .build();
         serviceManagement = retrofit.create(ServiceManagement.class);
     }
