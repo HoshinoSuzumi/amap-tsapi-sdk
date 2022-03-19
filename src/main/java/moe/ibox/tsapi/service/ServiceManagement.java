@@ -12,9 +12,10 @@ import retrofit2.http.POST;
 public interface ServiceManagement {
     @FormUrlEncoded
     @POST("/service/add")
+//    Call<BaseResponse<ServiceCreated>> addService(@Body ServiceAdd serviceAdd);
     Call<BaseResponse<ServiceCreated>> addService(
             @Field("key") String key,
             @Field("name") String name,
-            @Field("desc") String description);
-//    Call<BaseResponse<ServiceCreated>> addService(@Body ServiceAdd serviceAdd);
+            @Field("desc") String desc
+    );
 }
