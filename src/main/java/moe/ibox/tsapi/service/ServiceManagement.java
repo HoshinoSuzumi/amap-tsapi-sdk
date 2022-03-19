@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 
 public interface ServiceManagement {
     @FormUrlEncoded
-    @POST("/service/add")
+    @POST("service/add")
 //    Call<BaseResponse<ServiceCreated>> addService(@Body ServiceAdd serviceAdd);
     Call<BaseResponse<ServiceCreated>> addService(
             @Field("key") String key,
