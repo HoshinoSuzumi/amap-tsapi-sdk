@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="amap-tsapi-sdk:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/amap_tsapi_sdk_jar</output-path>
+    <root id="archive" name="amap-tsapi-sdk.jar">
+      <element id="module-output" name="amap-tsapi-sdk.main" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="library" level="project" name="Gradle: com.squareup.retrofit2:converter-gson:2.9.0" />
+        <element id="library" level="project" name="Gradle: com.squareup.retrofit2:retrofit:2.9.0" />
+      </element>
+    </root>
+  </artifact>
+</component>
