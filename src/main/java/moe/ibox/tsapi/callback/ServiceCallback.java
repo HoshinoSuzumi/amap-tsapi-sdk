@@ -9,7 +9,7 @@ public abstract class ServiceCallback<T> implements Callback<T> {
     @Override
     public void onResponse(Call<T> call, Response<T> response) {
         if (response.body() == null) {
-            onFailure(call, new Throwable(response.message()));
+            onFailure(call, new Throwable(response.message() + response.raw()));
         } else {
             T t = response.body();
             onResponse(t);
