@@ -2,6 +2,8 @@
 
 高德开放平台猎鹰组件 WebService 的第三方 SDK (for JVM & Android)
 
+[![](https://jitpack.io/v/HoshinoSuzumi/amap-tsapi-sdk.svg)](https://jitpack.io/#HoshinoSuzumi/amap-tsapi-sdk)
+
 > 什么是猎鹰？
 >
 > 猎鹰是一套轨迹管理服务，提供移动端SDK和后端API供开发者接入。猎鹰可以满足您追踪车辆等定位设备，其提供的丰富接口和云端服务，可以让开发者基于猎鹰迅速构建一套完全属于自己的精准、高效的轨迹管理系统，应用于车队管理、人员管理等领域。
