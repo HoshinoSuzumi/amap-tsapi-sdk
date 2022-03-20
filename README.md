@@ -34,13 +34,13 @@ implementation 'com.github.HoshinoSuzumi:amap-tsapi-sdk:0.1.1'
 ```java
 AmapTrackServiceApi trackServiceApi=new AmapTrackServiceApi("YOUR_WEB_SERVICE_KEY");
 
-        trackServiceApi.serviceAdd("test","test",new ServiceCallback<BaseResponse<ServiceCreated>>(){
-@Override
-protected void onResponse(BaseResponse<ServiceCreated> serviceCreatedBaseResponse){
+trackServiceApi.serviceAdd("test","test",new ServiceCallback<BaseResponse<ServiceCreated>>(){
+    @Override
+    protected void onResponse(BaseResponse<ServiceCreated> serviceCreatedBaseResponse){
         Log.i("TSAPI",String.valueOf(serviceCreatedBaseResponse.getErrcode()));
         Log.i("TSAPI",String.valueOf(serviceCreatedBaseResponse.getErrmsg()));
-        }
-        });
+    }
+});
 ```
 
 详细请查阅包内 Java Doc
