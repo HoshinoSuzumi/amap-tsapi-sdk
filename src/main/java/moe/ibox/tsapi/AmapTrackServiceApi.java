@@ -19,7 +19,8 @@ public class AmapTrackServiceApi {
     ServiceManagement serviceManagement;
 
     /**
-     * @param baseUrl Custom server base url
+     * @param webServiceKEY Web service KEY
+     * @param baseUrl       Base url of the server
      */
     public AmapTrackServiceApi(String webServiceKEY, String baseUrl) {
         this.TSAPI_WEB_KEY = webServiceKEY;
@@ -30,22 +31,43 @@ public class AmapTrackServiceApi {
         serviceManagement = retrofit.create(ServiceManagement.class);
     }
 
+    /**
+     * @param webServiceKEY Web service KEY
+     */
     public AmapTrackServiceApi(String webServiceKEY) {
         this(webServiceKEY, "https://tsapi.amap.com/v1/track/");
     }
 
+    /**
+     * @param name     Service name
+     * @param desc     Service description
+     * @param callback callback
+     */
     public void serviceAdd(String name, String desc, ServiceCallback<BaseResponse<ServiceCreated>> callback) {
         serviceManagement.addService(this.TSAPI_WEB_KEY, name, desc).enqueue(callback);
     }
 
+    /**
+     * @param sid      Service id
+     * @param callback callback
+     */
     public void serviceDelete(int sid, ServiceCallback<BaseResponse> callback) {
         serviceManagement.deleteService(this.TSAPI_WEB_KEY, sid).enqueue(callback);
     }
 
+    /**
+     * @param sid         Service id
+     * @param name        Service name
+     * @param description Service description
+     * @param callback    callback
+     */
     public void serviceUpdate(int sid, String name, String description, ServiceCallback<BaseResponse<ServiceModified>> callback) {
         serviceManagement.updateService(this.TSAPI_WEB_KEY, sid, name, description).enqueue(callback);
     }
 
+    /**
+     * @param callback callback
+     */
     public void serviceList(ServiceCallback<BaseResponse<ServiceList>> callback) {
         serviceManagement.listService(this.TSAPI_WEB_KEY).enqueue(callback);
     }
