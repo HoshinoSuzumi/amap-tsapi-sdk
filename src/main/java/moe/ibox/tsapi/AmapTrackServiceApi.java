@@ -38,7 +38,7 @@ public class AmapTrackServiceApi {
         this(webServiceKEY, "https://tsapi.amap.com/v1/track/");
     }
 
-    /**
+    /** Add service
      * @param name     Service name
      * @param desc     Service description
      * @param callback callback
@@ -47,7 +47,7 @@ public class AmapTrackServiceApi {
         serviceManagement.addService(this.TSAPI_WEB_KEY, name, desc).enqueue(callback);
     }
 
-    /**
+    /** Delete service
      * @param sid      Service id
      * @param callback callback
      */
@@ -55,7 +55,7 @@ public class AmapTrackServiceApi {
         serviceManagement.deleteService(this.TSAPI_WEB_KEY, sid).enqueue(callback);
     }
 
-    /**
+    /** Update service info
      * @param sid         Service id
      * @param name        Service name
      * @param description Service description
@@ -65,7 +65,7 @@ public class AmapTrackServiceApi {
         serviceManagement.updateService(this.TSAPI_WEB_KEY, sid, name, description).enqueue(callback);
     }
 
-    /**
+    /** Fetch all service
      * @param callback callback
      */
     public void serviceList(ServiceCallback<BaseResponse<ServiceList>> callback) {
