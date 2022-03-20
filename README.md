@@ -49,15 +49,20 @@ trackServiceApi.serviceAdd("test","test",new ServiceCallback<BaseResponse<Servic
 
 计划实现的 API
 
-|   接口类目    | 功能        | API                                             | 实现  | 实例方法         |
-|:---------:|-----------|-------------------------------------------------|:---:|--------------|
-| service管理 | 增加service | https://tsapi.amap.com/v1/track/service/add     |  √  | addService() |
-| service管理 | 删除service | https://tsapi.amap.com/v1/track/service/delete  |     |              |
-| service管理 | 修改service | https://tsapi.amap.com/v1/track/service/update  |     |              |
-|   终端管理    | 增加终端      | https://tsapi.amap.com/v1/track/terminal/add    |     |              |
-|   终端管理    | 删除终端      | https://tsapi.amap.com/v1/track/terminal/delete |     |              |
-|   终端管理    | 修改终端      | https://tsapi.amap.com/v1/track/terminal/update |     |              |
-|   终端管理    | 查询终端      | https://tsapi.amap.com/v1/track/terminal/list   |     |              |
+|   接口类目    | 功能        | API                                                     | 实现  | 实例方法            |
+|:---------:|-----------|---------------------------------------------------------|:---:|-----------------|
+| service管理 | 增加service | https://tsapi.amap.com/v1/track/service/add             |  √  | serviceAdd()    |
+| service管理 | 删除service | https://tsapi.amap.com/v1/track/service/delete          |     | serviceDelete() |
+| service管理 | 修改service | https://tsapi.amap.com/v1/track/service/update          |     | serviceUpdate() |
+| service管理 | 查询service | https://tsapi.amap.com/v1/track/service/list            |     | serviceList()   |
+|   终端管理    | 增加终端      | https://tsapi.amap.com/v1/track/terminal/add            |     |                 |
+|   终端管理    | 删除终端      | https://tsapi.amap.com/v1/track/terminal/delete         |     |                 |
+|   终端管理    | 修改终端      | https://tsapi.amap.com/v1/track/terminal/update         |     |                 |
+|   终端管理    | 查询终端      | https://tsapi.amap.com/v1/track/terminal/list           |     |                 |
+|   终端搜索    | 关键字搜索终端   | https://tsapi.amap.com/v1/track/terminal/search         |     |                 |
+|   终端搜索    | 周边搜索终端    | https://tsapi.amap.com/v1/track/terminal/aroundsearch   |     |                 |
+|   终端搜索    | 多边形内搜索终端  | https://tsapi.amap.com/v1/track/terminal/polygonsearch  |     |                 |
+|   终端搜索    | 行政区域内搜索终端 | https://tsapi.amap.com/v1/track/terminal/districtsearch |     |                 |
 
 *未出现在表中的 API 将暂时不会考虑加入，欢迎 Pull Request*
 
