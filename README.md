@@ -26,7 +26,7 @@ dependencyResolutionManagement {
 `dependencies` in `build.gradle`
 
 ```dsl
-implementation 'com.github.HoshinoSuzumi:amap-tsapi-sdk:0.1.1'
+implementation 'com.github.HoshinoSuzumi:amap-tsapi-sdk:0.2.2'
 ```
 
 # 使用
