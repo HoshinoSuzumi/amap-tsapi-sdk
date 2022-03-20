@@ -52,9 +52,9 @@ trackServiceApi.serviceAdd("test","test",new ServiceCallback<BaseResponse<Servic
 |   接口类目    | 功能        | API                                                     | 实现  | 实例方法            |
 |:---------:|-----------|---------------------------------------------------------|:---:|-----------------|
 | service管理 | 增加service | https://tsapi.amap.com/v1/track/service/add             |  √  | serviceAdd()    |
-| service管理 | 删除service | https://tsapi.amap.com/v1/track/service/delete          |     | serviceDelete() |
-| service管理 | 修改service | https://tsapi.amap.com/v1/track/service/update          |     | serviceUpdate() |
-| service管理 | 查询service | https://tsapi.amap.com/v1/track/service/list            |     | serviceList()   |
+| service管理 | 删除service | https://tsapi.amap.com/v1/track/service/delete          |  √  | serviceDelete() |
+| service管理 | 修改service | https://tsapi.amap.com/v1/track/service/update          |  √  | serviceUpdate() |
+| service管理 | 查询service | https://tsapi.amap.com/v1/track/service/list            |  √  | serviceList()   |
 |   终端管理    | 增加终端      | https://tsapi.amap.com/v1/track/terminal/add            |     |                 |
 |   终端管理    | 删除终端      | https://tsapi.amap.com/v1/track/terminal/delete         |     |                 |
 |   终端管理    | 修改终端      | https://tsapi.amap.com/v1/track/terminal/update         |     |                 |
